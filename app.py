@@ -12,8 +12,12 @@ airtime = africastalking.Airtime
 
 #recieve and send the SMS on the AT API
 
-@app.route("/sms-sending", methods=["GET","POST"])
-def sms_sending(): 
+@app.route("/index", methods=["GET","POST"])
+def index(): 
+
+    """
+    CHALLENGE: ADD IN OR REPLACE MOBILE CHECKOUT
+    """
     
     if request.method == "GET":
         return render_template("index.html")
